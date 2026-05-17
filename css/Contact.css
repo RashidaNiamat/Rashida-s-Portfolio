@@ -1,0 +1,205 @@
+/* CONTACT PAGE */
+
+.contact-background {
+
+    background:
+        linear-gradient(rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url('../img/Contact.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 110vh;
+
+    margin: 30px auto;
+    max-width: 1400px;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    filter: grayscale(100%);
+}
+
+/* OVERLAY */
+
+.contact-overlay {
+
+    padding: 40px;
+
+    backdrop-filter: blur(3px);
+}
+
+/* CONTACT CONTAINER */
+
+.contact-container {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 60px;
+
+    flex-wrap: wrap;
+}
+
+/* CONTACT INFO */
+
+.contact-info {
+
+    flex: 1;
+
+    min-width: 300px;
+}
+
+.contact-info h2 {
+
+    font-size: 50px;
+
+    color: #38bdf8;
+
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+
+    color: #e2e8f0;
+
+    margin-bottom: 40px;
+
+    font-size: 18px;
+}
+
+/* CONTACT ITEMS */
+
+.contact-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+
+    color: white;
+
+    font-size: 18px;
+}
+
+.contact-item i {
+
+    color: #38bdf8;
+
+    font-size: 26px;
+}
+
+.contact-item a {
+
+    color: white;
+
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+
+    color: #38bdf8;
+}
+
+/* FORM */
+
+.contact-form {
+
+    flex: 1;
+
+    min-width: 300px;
+}
+
+.contact-form form {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+
+    padding: 18px;
+
+    margin-bottom: 20px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: rgba(255,255,255,0.12);
+
+    color: white;
+
+    font-size: 16px;
+
+    backdrop-filter: blur(5px);
+}
+
+.contact-form textarea {
+
+    min-height: 180px;
+
+    resize: vertical;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+
+    color: #cbd5e1;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .contact-container{
+
+        flex-direction: column;
+    }
+
+    .contact-info h2{
+
+        font-size: 38px;
+    }
+
+}
+
+#success-message{
+
+    display:none;
+
+    margin-top:20px;
+
+    padding:12px 18px;
+
+    background:rgba(34,197,94,0.15);
+
+    border:1px solid #22c55e;
+
+    color:#22c55e;
+
+    border-radius:10px;
+
+    font-weight:bold;
+
+    text-align:center;
+}
+.contact-form button.btn-primary {
+    background: #0f172a;
+    border: 1px solid #38bdf8;
+    color: #e2e8f0;
+}
+
+.contact-form button.btn-primary:hover {
+    background: #111827;
+    transform: translateY(-2px);
+}

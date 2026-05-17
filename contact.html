@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/contact.css">
+
+    <!-- ICONS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <nav>
+
+            <h1 class="logo">Rashida's Portfolio</h1>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume and certificates.html">Resume and Certificates</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <section class="contact-background">
+
+    <div class="contact-overlay">
+
+        <div class="contact-container">
+
+            <!-- LEFT SIDE -->
+
+            <div class="contact-info">
+
+                <h2>Neem Contact Op</h2>
+
+                <p>
+                    Heeft u vragen of wilt u samenwerken?<br>
+                    Neem gerust contact met mij op.
+                </p>
+
+                <!-- WHATSAPP -->
+
+                <div class="contact-item">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    <span>+597 8640282</span>
+
+                </div>
+
+                <!-- EMAIL -->
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <span>rashida_6275@outlook.com</span>
+
+                </div>
+
+                <!-- LINKEDIN -->
+
+                <div class="contact-item">
+
+                    <i class="fa-brands fa-linkedin"></i>
+
+                    <a href="https://www.linkedin.com/in/rashida-niamat-a7766a32a"
+                        target="_blank"
+                        class="linkedin-btn">
+
+                        Bekijk Mijn LinkedIn
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT SIDE -->
+
+            <div class="contact-form">
+
+                <form>
+
+                    <input type="text"
+                        placeholder="Uw Naam"
+                        required>
+
+                    <input type="email"
+                        placeholder="Uw Email"
+                        required>
+
+                    <textarea
+                        placeholder="Uw Bericht"></textarea>
+
+                    <button type="submit"
+                        class="btn btn-primary">
+
+                        Verstuur Bericht
+
+                    </button>
+
+                </form>
+                <p id="success-message">
+    Uw bericht is succesvol verzonden!
+</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<script>
+
+const form = document.querySelector("form");
+const message = document.getElementById("success-message");
+
+form.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    message.style.display = "block";
+
+    form.reset();
+
+    setTimeout(() => {
+        message.style.display = "none";
+    }, 4000);
+
+});
+
+</script>
